@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Tags", type: :system do
-  let(:tag){ FactoryBot.crate(:name) }
+  let(:tag){ FactoryBot.create(:name) }
 
   it "Show tags index" do
     visit tags_path

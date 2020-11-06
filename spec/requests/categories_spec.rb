@@ -95,7 +95,8 @@ RSpec.describe Category, type: :request do
         category = Category.create(
           name: Faker::Team.name.titlecase
         )
-        patch category_path(category), params: { category: {name: "Diubah"} }
+        name = "Namao"
+        patch category_path(category), params: { category: {name: name} }
         category.reload
         skip("Add assertions for updated state")
       end

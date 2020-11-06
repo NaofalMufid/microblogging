@@ -5,7 +5,7 @@ RSpec.describe "Categories", type: :system do
   #   driven_by(:rack_test)
   # end
   
-  let(:category){ FactoryBot.crate(:name) }
+  let(:category){ FactoryBot.create(:name) }
 
   describe "Index Page" do
     it "Show cateories Index Page" do
